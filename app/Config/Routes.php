@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 //$routes->get('/', 'Home::index');
 
 $routes->get('/', 'TechNews::index');
+$routes->get('/tech-news/admin-tech', 'Admin::index');
 
 /*
  * --------------------------------------------------------------------
