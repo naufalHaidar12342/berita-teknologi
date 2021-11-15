@@ -1,74 +1,63 @@
 <?= $this->extend('partial-layout/template'); ?>
 <?= $this->section('page-content'); ?>
 
-<div class="container">
+<div class="container ">
 
     <div class="columns is-multiline mt-4">
         <div class="column is-full">
-            <div class="box">
-                <article class="media">
-                    <div class="media-left">
-                        <figure class="image is-64x64">
-                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                        </figure>
-                    </div>
-
-                    <div class="media-content">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child ">
                         <div class="content">
-                            <div class="level">
-                                <div class="level-left">
-                                    <p> <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small></p>
-                                </div>
-                                <div class="level-right">
-                                    <div class="tags level-item">
-                                        <a class="tag ">aaaa</a>
-                                        <a class="tag ">aagg</a>
-                                    </div>
-                                </div>
+                            <figure class="image is-2by1">
+                                <img src="/images/merry-christmas.jpg" style="border-radius: 4px;">
+                            </figure>
+                        </div>
+                    </article>
+                </div>
+                <div class="tile is-parent ">
+                    <article class="tile is-child notification is-link is-light">
+                        <div class="content">
+                            <p class="title">Tall tile</p>
+                            <p class="subtitle">With even more content</p>
+                            <div class="content">
+                                <!-- Content -->
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde, commodi consequuntur eveniet officia quasi totam obcaecati quis doloribus assumenda, iste enim vel laudantium! Autem temporibus omnis id aut incidunt.
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                            </p>
                         </div>
                         <nav class="level is-mobile">
                             <div class="level-left">
-                                <a class="level-item" aria-label="reply">
-                                    <span class="icon is-small">
-                                        <i class="fas fa-reply" aria-hidden="true"></i>
+                                <a class="level-item button is-link is-light" aria-label="reply" href="/tech-news/read-full">
+                                    <span class="icon is-small mr-1">
+                                        <i class="fa-solid fa-book-open-reader"></i>
                                     </span>
+                                    Read
                                 </a>
-                                <a class="level-item" aria-label="retweet">
-                                    <span class="icon is-small">
-                                        <i class="fas fa-retweet" aria-hidden="true"></i>
-                                    </span>
-                                </a>
-                                <a class="level-item" aria-label="like">
-                                    <span class="icon is-small">
-                                        <i class="fas fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                </a>
+
                             </div>
                             <div class="level-right">
-                                <div class="tags level-item">
-                                    <a class="tag ">aaaa</a>
-                                    <a class="tag ">aagg</a>
+                                <div class="tags level-item ">
+                                    <a class="tag has-background-white" style="text-decoration: none;">
+                                        <span class="icon is-small mr-1">
+                                            <i class="fas fa-desktop"></i>
+                                        </span>
+                                        ayymd
+                                    </a>
+                                    <a class="tag has-background-white" style="text-decoration: none;">
+                                        <span class="icon is-small mr-1">
+                                            <i class="fas fa-gamepad"></i>
+                                        </span>
+                                        aagg
+                                    </a>
                                 </div>
                             </div>
                         </nav>
-                    </div>
-                </article>
+
+                    </article>
+                </div>
             </div>
         </div>
 
-        <div class="column is-full">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ipsam et doloremque, autem porro nam voluptas quod sapiente iusto est optio temporibus quisquam sed officiis illo eos, error facere! Tenetur.
-        </div>
-        <div class="column is-full">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt rem non quibusdam quas enim quo deleniti mollitia illo iste aspernatur voluptate perferendis possimus, maiores doloremque iusto recusandae quasi sed at?
-        </div>
-        <div class="column is-full">
-            lorem
-        </div>
     </div>
 </div>
 
