@@ -37,17 +37,18 @@
                 <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
             </a>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-mobile">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div id="navigation-bar" class="navbar-menu">
+        <div id="navbar-mobile" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item">
-                    <i class="fa-solid fa-earth-asia fa-spin"></i>Home
+                    <i class="fa-solid fa-earth-asia fa-spin"></i>
+                    Home
                 </a>
 
                 <a class="navbar-item">
