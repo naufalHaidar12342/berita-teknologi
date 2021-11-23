@@ -14,7 +14,7 @@ class TechNews extends BaseController
     public function readMore()
     {
         $data = [
-            'page_title' => 'Read More'
+            'page_title' => 'Read More',
         ];
 
         return view('pages/read-more', $data);

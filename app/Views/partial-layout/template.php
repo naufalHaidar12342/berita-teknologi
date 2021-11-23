@@ -16,6 +16,7 @@
 
     <!-- bulma carousel -->
     <link rel="stylesheet" href="/css/carousel-css/bulma-carousel.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"> -->
     <style>
         .news-background {
             background-color: #f5f5f5;
@@ -26,64 +27,99 @@
             background-clip: border-box, border-box;
 
         }
+
+        @media (min-width: 1024px) {
+            .navbar-item {
+                color: white;
+            }
+
+            .navbar-dropdown>.navbar-item {
+                color: black;
+            }
+
+            .has-dropdown>.navbar-item {
+                color: white;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar is-transparent is-link is-light" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-            </a>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-mobile">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+    <section class="hero is-large has-carousel">
+        <div class="hero-carousel " id="carousel-demo">
+            <div class='has-background is-active'>
+                <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" />
+            </div>
+            <div class='has-background'>
+                <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" />
+            </div>
+            <div class='has-background'>
+                <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" />
+            </div>
+            <div class='has-background'>
+                <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" />
+            </div>
         </div>
-
-        <div id="navbar-mobile" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item">
-                    <i class="fa-solid fa-earth-asia fa-spin"></i>
-                    Home
-                </a>
-
-                <a class="navbar-item">
-
-                    Documentation
-                </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
+        <div class="hero-head">
+            <!-- navbar -->
+            <nav class="navbar " role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
                     </a>
 
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            <i class="fa-solid fa-align-justify"></i>
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                    </div>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-mobile">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
                 </div>
-            </div>
+
+                <div id="navbar-mobile" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item ">
+                            <i class="fa-solid fa-earth-asia fa-spin"></i>
+                            Home
+                        </a>
+
+                        <a class="navbar-item ">
+
+                            Documentation
+                        </a>
+
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link ">
+                                More
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">
+                                    <i class="fa-solid fa-align-justify"></i>
+                                    About
+                                </a>
+                                <a class="navbar-item">
+                                    Jobs
+                                </a>
+                                <a class="navbar-item">
+                                    Contact
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
 
+                </div>
+            </nav>
         </div>
-    </nav>
-
+        <div class="hero-body has-text-centered">
+            <h1 class="title has-text-white">Tech News</h1>
+        </div>
+    </section>
 
 
     <?= $this->renderSection('page-content'); ?>
@@ -116,12 +152,15 @@
 
         });
     </script>
-    <script src="/js/carousel-js/bulma-carousel.min.js"></script>
 
+    <script src="/js/carousel-js/bulma-carousel.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script> -->
     <script>
         bulmaCarousel.attach('#carousel-demo', {
             slidesToScroll: 1,
-            slidesToShow: 4
+            slidesToShow: 1,
+            loop: true,
+            autoplay: true,
         });
     </script>
     <script>
