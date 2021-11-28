@@ -5,7 +5,7 @@
     <meta name="description" content="Situs berita berfokus pada teknologi.">
 
     <!-- bulma css -->
-    <link rel="stylesheet" href="/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/bulma/css/bulma-min.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
 
     <!-- bulma carousel -->
     <link rel="stylesheet" href="/css/carousel-css/bulma-carousel.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"> -->
+
     <style>
         .news-background {
             background-color: #f5f5f5;
@@ -25,7 +25,6 @@
             background-attachment: scroll, fixed;
             background-origin: padding-box, padding-box;
             background-clip: border-box, border-box;
-
         }
 
         @media (min-width: 1024px) {
@@ -45,14 +44,16 @@
 </head>
 
 <body>
-
+    <!-- hero carousel dengan navbar  -->
     <section class="hero is-large has-carousel">
         <div class="hero-carousel " id="carousel-demo">
             <div class='has-background is-active'>
                 <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" />
+
             </div>
             <div class='has-background'>
                 <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" />
+
             </div>
             <div class='has-background'>
                 <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" />
@@ -60,10 +61,13 @@
             <div class='has-background'>
                 <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" />
             </div>
+            <div class='has-background'>
+                <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" />
+            </div>
         </div>
         <div class="hero-head">
             <!-- navbar -->
-            <nav class="navbar " role="navigation" aria-label="main navigation">
+            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="https://bulma.io">
                         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -79,37 +83,15 @@
                 <div id="navbar-mobile" class="navbar-menu">
                     <div class="navbar-start">
                         <a class="navbar-item ">
-                            <i class="fa-solid fa-earth-asia fa-spin"></i>
-                            Home
+                            <i class="fa-solid fa-desktop mr-2"></i>
+                            PC
                         </a>
 
                         <a class="navbar-item ">
-
-                            Documentation
+                            <i class="fa-solid fa-gamepad mr-2"></i>
+                            Console
                         </a>
 
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link ">
-                                More
-                            </a>
-
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item">
-                                    <i class="fa-solid fa-align-justify"></i>
-                                    About
-                                </a>
-                                <a class="navbar-item">
-                                    Jobs
-                                </a>
-                                <a class="navbar-item">
-                                    Contact
-                                </a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item">
-                                    Report an issue
-                                </a>
-                            </div>
-                        </div>
                     </div>
 
 
@@ -117,7 +99,8 @@
             </nav>
         </div>
         <div class="hero-body has-text-centered">
-            <h1 class="title has-text-white">Tech News</h1>
+            <h1 class="title has-text-light">Tech News 1</h1>
+            <h2 class="subtitle has-text-light"> <i>Sumber berita yang mudah dipahami.</i> </h2>
         </div>
     </section>
 
@@ -154,7 +137,6 @@
     </script>
 
     <script src="/js/carousel-js/bulma-carousel.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script> -->
     <script>
         bulmaCarousel.attach('#carousel-demo', {
             slidesToScroll: 1,

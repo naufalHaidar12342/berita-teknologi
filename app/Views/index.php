@@ -1,7 +1,7 @@
 <?= $this->extend('partial-layout/template'); ?>
 <?= $this->section('page-content'); ?>
 
-<div class="container ">
+<div class="container mb-5">
 
     <div class="columns is-multiline mt-4">
         <div class="column is-full">
