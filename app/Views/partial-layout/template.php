@@ -11,70 +11,70 @@
     <link rel="stylesheet" href="/fontawesome-6.0.0-beta2/css/all.min.css">
 </head>
 
-<body>
+<body class="has-navbar-fixed-top">
     <!-- navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-            </a>
+    <nav class="navbar is-transparent is-fixed-top">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.php">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    </a>
+    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.php">
+        <i class="fa-solid fa-earth-asia fa-flip"></i>‎ ‎ Home
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+          Docs
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+            Overview
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+            Modifiers
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+            Columns
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+            Layout
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+            Form
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+            Elements
+          </a>
+          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+            Components
+          </a>
         </div>
-
-        <div id="navigation-bar" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item">
-                    <i class="fa-solid fa-earth-asia fa-flip"></i>Home
-                </a>
-
-                <a class="navbar-item">
-
-                    Documentation
-                </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            <i class="fa-solid fa-align-justify"></i>
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
 
             <div class="navbar-end">
                 <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary">
-                            <strong>Sign up</strong>
-                        </a>
-                        <a class="button is-light">
-                            Log in
-                        </a>
-                    </div>
+                  <div class="field">
+                    <p class="control has-icons-left has-icons-right">
+                      <input class="input" type="search" placeholder="Search">
+                      <span class="icon is-small is-left">
+                          <i class="fas fa-search"></i>
+                      </span>
+                    </p>
+                  </div>
                 </div>
             </div>
-        </div>
-    </nav>
+  </div>
+</nav>
 
     <?= $this->renderSection('page-content'); ?>
 
