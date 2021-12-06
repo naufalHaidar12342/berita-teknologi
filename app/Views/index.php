@@ -1,68 +1,67 @@
 <?= $this->extend('partial-layout/template'); ?>
 <?= $this->section('page-content'); ?>
 
-<div class="columns">
-    <div class="column">
-        <div class="card">
-            <div class="card-image">
-                <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
-                    </div>
-                </div>
+<div class="container mb-5">
 
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>
-                    . <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+    <div class="columns is-multiline mt-4">
+        <div class="column is-full">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child ">
+                        <div class="content">
+                            <figure class="image is-2by1">
+                                <img src="/images/merry-christmas.jpg" style="border-radius: 4px;">
+                            </figure>
+                        </div>
+                    </article>
+                </div>
+                <div class="tile is-parent ">
+                    <article class="tile is-child notification is-link is-light">
+                        <div class="content">
+                            <p class="title">Tall tile</p>
+                            <p class="subtitle">With even more content</p>
+                            <div class="content">
+                                <!-- Content -->
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde, commodi consequuntur eveniet officia quasi totam obcaecati quis doloribus assumenda, iste enim vel laudantium! Autem temporibus omnis id aut incidunt.
+                            </div>
+                        </div>
+                        <nav class="level is-mobile">
+                            <div class="level-left">
+                                <a class="level-item button is-link is-light" aria-label="reply" href="/tech-news/read-full">
+                                    <span class="icon is-small mr-1">
+                                        <i class="fa-solid fa-book-open-reader"></i>
+                                    </span>
+                                    Read
+                                </a>
+
+                            </div>
+                            <div class="level-right">
+                                <div class="tags level-item ">
+                                    <a class="tag has-background-white" style="text-decoration: none;">
+                                        <span class="icon is-small mr-1">
+                                            <i class="fas fa-desktop"></i>
+                                        </span>
+                                        ayymd
+                                    </a>
+                                    <a class="tag has-background-white" style="text-decoration: none;">
+                                        <span class="icon is-small mr-1">
+                                            <i class="fas fa-gamepad"></i>
+                                        </span>
+                                        aagg
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="column">
-        <div class="card">
-            <div class="card-image">
-                <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
-                    </div>
-                </div>
 
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>
-                    . <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
-            </div>
-        </div>
     </div>
+</div>
 
-</div>
-</div>
+
 
 
 <?= $this->endSection(); ?>
