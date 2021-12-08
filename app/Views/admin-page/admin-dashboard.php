@@ -94,6 +94,8 @@
                 </div>
             </div>
         </nav>
+
+        <!-- sidebar / navbar yang menurun, ada di samping halaman -->
         <aside class="aside is-placed-left is-expanded">
             <div class="aside-tools">
                 <div class="aside-tools-label">
