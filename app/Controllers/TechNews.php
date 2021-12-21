@@ -11,4 +11,12 @@ class TechNews extends BaseController
         ];
         return view('index', $data);
     }
+    public function readMore()
+    {
+        $data = [
+            'page_title' => 'Read More',
+        ];
+
+        return view('pages/read-more', $data);
+    }
 }
