@@ -73,7 +73,6 @@
             <span>
                 <strong>Kembali</strong>
             </span>
-
         </a>
     </div>
 

@@ -44,7 +44,7 @@
 </head>
 
 <body>
-    <!-- hero carousel dengan navbar  -->
+    <!-- hero carousel (slideshow berukuran hero section)  -->
     <section class="hero is-large has-carousel">
         <div class="hero-carousel " id="carousel-demo">
             <div class='has-background is-active'>
@@ -67,7 +67,7 @@
         </div>
         <div class="hero-head">
             <!-- navbar -->
-            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="https://bulma.io">
                         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -91,9 +91,27 @@
                             <i class="fa-solid fa-gamepad mr-2"></i>
                             Console
                         </a>
-
                     </div>
 
+                    <!-- navbar di flex end (bagian kanan layar) -->
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="field has-addons">
+                                <!-- input untuk search -->
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Cari berita disini...">
+                                </div>
+                                <!-- button untuk submit -->
+                                <div class="control">
+                                    <a class="button is-link">
+                                        <i class="fa-brands fa-searchengin mr-2"></i>
+                                        Search
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
             </nav>
