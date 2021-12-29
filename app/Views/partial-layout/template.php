@@ -14,6 +14,7 @@
     <!-- fontawesome-->
     <link rel="stylesheet" href="/fontawesome-6.0.0-beta2/css/all.min.css">
 
+
     <!-- bulma carousel -->
     <link rel="stylesheet" href="/css/carousel-css/bulma-carousel.min.css">
 
@@ -67,7 +68,7 @@
         </div>
         <div class="hero-head">
             <!-- navbar -->
-            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="https://bulma.io">
                         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -91,9 +92,27 @@
                             <i class="fa-solid fa-gamepad mr-2"></i>
                             Console
                         </a>
-
                     </div>
 
+                    <!-- navbar di flex end (bagian kanan layar) -->
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="field has-addons">
+                                <!-- input untuk search -->
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Cari berita disini...">
+                                </div>
+                                <!-- button untuk submit -->
+                                <div class="control">
+                                    <a class="button is-link">
+                                        <i class="fa-brands fa-searchengin mr-2"></i>
+                                        Search
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
             </nav>
@@ -103,7 +122,6 @@
             <h2 class="subtitle has-text-light"> <i>Sumber berita yang mudah dipahami.</i> </h2>
         </div>
     </section>
-
 
     <?= $this->renderSection('page-content'); ?>
 
