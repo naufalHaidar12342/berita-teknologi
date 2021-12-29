@@ -14,6 +14,7 @@
     <!-- fontawesome-->
     <link rel="stylesheet" href="/fontawesome-6.0.0-beta2/css/all.min.css">
 
+
     <!-- bulma carousel -->
     <link rel="stylesheet" href="/css/carousel-css/bulma-carousel.min.css">
 
@@ -121,7 +122,6 @@
             <h2 class="subtitle has-text-light"> <i>Sumber berita yang mudah dipahami.</i> </h2>
         </div>
     </section>
-
 
     <?= $this->renderSection('page-content'); ?>
 
