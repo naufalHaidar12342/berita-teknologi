@@ -45,33 +45,33 @@
 </head>
 
 <body>
-    <!-- hero carousel dengan navbar  -->
+    <!-- hero carousel (slideshow berukuran hero section)  -->
     <section class="hero is-large has-carousel">
         <div class="hero-carousel " id="carousel-demo">
             <div class='has-background is-active'>
-                <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" />
+                <img class="is-background" src="https://akcdn.detik.net.id/visual/2021/07/16/bus-listrik-jadi-kunci-agenda-hijau-joe-biden-3_169.jpeg?w=650" alt="" />
 
             </div>
             <div class='has-background'>
-                <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" />
+                <img class="is-background" src="https://media.newyorker.com/photos/6184133adedf5ef2f7919966/master/pass/Chayka-Meta.jpg" alt="" />
 
             </div>
             <div class='has-background'>
-                <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" />
+                <img class="is-background" src="https://i.cbc.ca/1.6259219.1637669324!/cpImage/httpImage/image.jpg_gen/derivatives/16x9_780/space-telescope.jpg" alt="" />
             </div>
             <div class='has-background'>
-                <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" />
+                <img class="is-background" src="https://cdn1-production-images-kly.akamaized.net/Phh9edE1LyCL58aYCQUrQOhPSUo=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3601146/original/095768600_1634111006-EIS_II.jpg" alt="" />
             </div>
             <div class='has-background'>
-                <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" />
+                <img class="is-background" src="https://im.indiatimes.in/content/2021/Jun/AMP-58_60b89e68b3684.jpg?w=725&h=543" alt="" />
             </div>
         </div>
         <div class="hero-head">
             <!-- navbar -->
-            <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-transparent " role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                    <a class="navbar-item" href="/">
+                        <img src="/images/tchn-logo.png" width="120" height="30">
                     </a>
 
                     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-mobile">
@@ -105,7 +105,6 @@
                                 <!-- button untuk submit -->
                                 <div class="control">
                                     <a class="button is-link">
-                                        <i class="fa-brands fa-searchengin mr-2"></i>
                                         Search
                                     </a>
                                 </div>

@@ -6,6 +6,6 @@ class Admin extends BaseController
 {
     public function index()
     {
-        return view('/admin-page/admin');
+        return view('/admin-page/admin-dashboard');
     }
 }

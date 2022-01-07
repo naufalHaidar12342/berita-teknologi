@@ -27,7 +27,7 @@
                         </div>
                         <nav class="level is-mobile">
                             <div class="level-left">
-                                <a class="level-item button is-link is-light" aria-label="reply" href="/tech-news/read-full">
+                                <a class="level-item button has-background-white" style="color:currentColor" aria-label="reply" href="/tech-news/read-full">
                                     <span class="icon is-small mr-1">
                                         <i class="fa-solid fa-book-open-reader"></i>
                                     </span>
