@@ -131,8 +131,8 @@
                             <p class="title">Metaverse, Dunia Virtual dalam Imajinasi Mark Zuckerberg</p>
                             <time datetime="2016-1-1">07:09 - 10 November 2021</time>
                             <div class="content">
-                                Mengungkapkan visinya untuk membangun sebuah dunia virtual bernama metaverse.
-                                Metaverse yang dibayangkan Mark Zuckerberg akan berbentuk sebuah dunia virtual
+                                Zuckerberg mengungkapkan visinya untuk membangun sebuah dunia virtual bernama metaverse.
+                                Seperti apa dunia virtual yang diimpikan oleh pendiri Facebook tersebut?
 
                             </div>
                         </div>
