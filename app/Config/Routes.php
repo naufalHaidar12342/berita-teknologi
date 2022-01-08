@@ -39,6 +39,7 @@ $routes->get('/tech-news/read-full', 'TechNews::readMore');
 $routes->get('/tech-news/admin-tech', 'Admin::index');
 
 
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
