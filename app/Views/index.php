@@ -23,8 +23,8 @@
                                 <p class="title"><?= $news['judul_post']; ?></p>
                                 <p class="subtitle">
                                     oleh <?= $news['author_of_post']; ?>.
-                                    <i class="fas fa-calendar-alt ml-2"></i>
-                                    <?= date_format(date_create($news['created_at']), 'd M Y H:i'); ?>
+                                    <i class="fas fa-calendar-alt ml-2 mr-1"></i>
+                                    <?= date_format(date_create($news['created_at']), 'l, j F Y H:i'); ?>
                                 </p>
                                 <div class="content">
                                     <!-- Content -->
@@ -37,7 +37,7 @@
                                         <span class="icon is-small mr-1">
                                             <i class="fa-solid fa-book-open-reader"></i>
                                         </span>
-                                        Read
+                                        Read more
                                     </a>
 
                                 </div>

@@ -91,14 +91,14 @@
 
                                 <div class="field has-addons">
                                     <!-- input untuk search -->
-                                    <div class="control">
-                                        <input class="input" type="text" placeholder="🔍 Cari berita disini...">
+                                    <div class="control is-expanded">
+                                        <input class="input" type="text" placeholder="🔍 Cari judul berita, author, isi berita ...">
                                     </div>
                                     <!-- button untuk submit -->
-                                    <div class="control">
-                                        <a class="button is-link">
+                                    <div class="control is-expanded">
+                                        <button class="button is-link" type="submit" name="submit-searched-keyword">
                                             Search
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </form>

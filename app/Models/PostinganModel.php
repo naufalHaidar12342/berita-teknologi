@@ -23,12 +23,16 @@ class PostinganModel extends Model
         'last_paragraph',
     ];
 
+    protected $useTimestamps = true;
 
 
 
     public function search($keywords)
     {
 
-        return $this->table('site_posts')->like('judul_post', $keywords);
+        return $this->table('site_posts')
+            ->like('judul_post', $keywords)
+            ->orLike('first_paragraph', $keywords)
+            ->orLike('second_paragraph', $keywords);
     }
 }
